@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,500,900|Oswald:200,300,500,700');
+
+@mixin font-montserrat( $size: false, $color: false, $weight: false ) {
+  font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+  line-height: 1.2em;
+
+  @if $size { font-size: $size; }
+  @if $color { color: $color; }
+  @if $weight != false {
+    @if $weight == 'light' {
+      font-weight: 300;
+    } @else if $weight == 'medium' {
+      font-weight: 500;
+    } @else if $weight == 'bold' {
+      font-weight: 700;
+    }
+  }
+}
+
+@mixin font-oswald( $size: false, $color: false, $weight: false ) {
+  font-family: 'Oswald', Helvetica, Arial, sans-serif;
+  line-height: 1.2em;
+
+  @if $size { font-size: $size; }
+  @if $color { color: $color; }
+  @if $weight != false {
+    @if $weight == 'light' {
+      font-weight: 300;
+    } @else if $weight == 'medium' {
+      font-weight: 500;
+    } @else if $weight == 'bold' {
+      font-weight: 700;
+    }
+  }
+}
